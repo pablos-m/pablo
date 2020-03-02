@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+<title>pablos/projects</title>
+<style>
+
+body {
+  color: white;
+}
+
+body {
+  background-color: lightblue;
+}
+
+
+a:link, a:visited {
+  background-color: blue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: SlateBlue;
+}
+ 
+
+</style>
+</head>
+<body>
+
+
+<h1 style="background-color:blue;">
+<a href="https://pablos.tk/">HOME</a>
+</h1>
+
+<h2>Na razie niczego jeszcze niema.</h2>
+</body>
+</html>
