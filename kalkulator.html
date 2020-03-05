@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+<title>pablos/projects</title>
+<style>
+
+body {
+  color: white;
+}
+
+body {
+  background-color: lightblue;
+}
+
+div {
+  text-align: center;
+}
+
+a:link, a:visited {
+  background-color: blue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: SlateBlue;
+}
+ 
+
+</style>
+</head>
+<body>
+
+
+<h1 style="background-color:blue;">
+<a href="https://pablos.tk/projects.html">PROJECTS</a>
+</h1>
+
+
+
+<div>
+<h3>DODAWANIE</h3>
+<script>
+function dodawanie() {
+var a = document.getElementById("jeden").value;
+var b = document.getElementById("dwa").value;
+var a = parseFloat(a);
+var b = parseFloat(b);
+alert(a+b);
+}
+</script>
+
+
+
+<input type="value" id="jeden" value=""placeholder="Tu wpisz" />
++
+<input type="value" id="dwa" value=""placeholder="Tu wpisz" />
+<br><br><button onclick="dodawanie()">=</button>
+
+
+<br><br>
+
+
+<h3>ODEJMOWANIE</h3>
+<script>
+function odejmowanie() {
+var a = document.getElementById("trzy").value;
+var b = document.getElementById("cztery").value;
+alert(a-b);
+}
+</script>
+
+
+
+<input type="value" id="trzy" value=""placeholder="Tu wpisz" />
+-
+<input type="value" id="cztery" value=""placeholder="Tu wpisz" />
+<br><br><button onclick="odejmowanie()">=</button>
+
+
+<br><br>
+</div>
+<div>
+<h3>MNOŻENIE</h3>
+<script>
+function mnożenie() {
+var a = document.getElementById("piec").value;
+var b = document.getElementById("szesc").value;
+alert(a*b);
+}
+</script>
+
+
+
+<input type="value" id="piec" value=""placeholder="Tu wpisz" />
+*
+<input type="value" id="szesc" value=""placeholder="Tu wpisz" />
+<br><br><button onclick="mnożenie()">=</button>
+
+
+<br><br>
+
+
+<h3>DZIELENIE</h3>
+<script>
+function dzielenie() {
+var a = document.getElementById("siedem").value;
+var b = document.getElementById("osiem").value;
+alert(a/b);
+}
+</script>
+
+
+
+<input type="value" id="siedem" value=""placeholder="Tu wpisz" />
+/
+<input type="value" id="osiem" value=""placeholder="Tu wpisz" />
+<br><br><button onclick="dzielenie()">=</button>
+</div>
+</body>
+</html>
