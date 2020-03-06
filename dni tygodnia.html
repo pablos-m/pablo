@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+<title>pablos/projects/memory</title>
+<style>
+
+div.a {
+  text-align: center;
+}
+
+body {
+  color: white;
+}
+
+body {
+  background-color: lightblue;
+}
+
+a:link, a:visited {
+  background-color: blue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: SlateBlue;
+}
+
+</style>
+</head>
+<body>
+
+<h1 style="background-color:blue;">
+<a href="projects.html">PROJECTS</a>
+</h1>
+<br><br>
+<div class="a"><h1>UWAGA UWAGA!!!</h1>
+<p id="demo"></p>
+
+<script>
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Niedziela<br><br><h3>JEST WEEKEND!!!";
+    break;
+  case 1:
+    day = "Poniedziałek<h3>5 DNI DO WEEKENDU!!!</h3>";
+    break;
+  case 2:
+    day = "Wtorek<h3>4 DNI DO WEEKENDU!!!</h3>";
+    break;
+  case 3:
+    day = "Środa<h3>3 DNI DO WEEKENDU!!!</h3>";
+    break;
+  case 4:
+    day = "Czwartek<h3>2 DNI DO WEEKENDU!!!</h3>";
+    break;
+  case 5:
+    day = "Piątek<br><br><h3>PRAWIE WEEKEND!!!";
+    break;
+  case  6:
+    day = "Sobota<br><br><h3>JEST WEEKEND!!!";
+}
+document.getElementById("demo").innerHTML = "<h2>Dzisiaj jest<h2> " + day;
+</script>
+</a>
+</div>
+</h3>
+
+
+</body>
+</html>
