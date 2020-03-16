@@ -57,9 +57,13 @@ body {
 <script>
 function myFunction() {
   var age, voteable;
-  age = document.getElementById("age").value;
-  voteable = (age < 18) ? "Jesteś za mały aby":"Jesteś pełnoletni więc możesz ";
-  document.getElementById("demo").innerHTML = voteable + " jeżdzić autem.";
+  age = Number(document.getElementById("age").value);
+  if (isNaN(age)) {
+    voteable = "To nie jest twój wiek.";
+  } else {
+    voteable = (age < 18) ? "Jesteś za mały aby jeżdzić autem." : "Jesteś pełnoletni więc możesz jeżdzić autem.";
+  }
+  document.getElementById("demo").innerHTML = voteable;
 }
 </script>
 </div>
