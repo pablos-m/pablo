@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+ <meta charset="utf-8">
+<title>dzień</title>
+<style>
+
+body {
+  color: white;
+}
+
+div.a {
+  text-align: center;
+}
+
+
+
+a:link, a:visited {
+  background-color: blue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: SlateBlue;
+}
+
+
+
+
+body {
+  background-color: lightblue;
+}
+
+
+div.b {
+  text-align: right;
+}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<h1 style="background-color:blue;">
+<a href="projects.html">PROJECTS</a>
+</h1>
+<br><br>
+<div class=a><h3>
+Jeżeli nie wiesz czy jest dzień, czy jest noc to sprawć to tu:
+<br><br>
+<button onclick="myFunction()">SPRAWĆ</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var hour = new Date().getHours(); 
+  var greeting;
+  if (hour < 20) {
+    greeting = "Jest dzień.";
+  } else {
+    greeting = "Jest noc.";
+  }
+  document.getElementById("demo").innerHTML = greeting;
+}
+</script>
+</h3></div>
+</body>
+</html>
