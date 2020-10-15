@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<head>
+   <meta charset="utf-8">
+  <link rel="icon" href="https://pablos.tk/Plogo.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pablos.tk
+</title>
+
+<style>
+
+body {
+  color: white;
+}
+
+div.a {
+  text-align: center;
+}
+
+
+
+a:link, a:visited {
+  background-color: blue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: SlateBlue;
+}
+
+
+
+
+body {
+  background-color: lightblue;
+}
+
+
+
+
+
+
+}
+
+body {
+  color: white;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<h1 style="background-color:blue;">
+
+<a href="projects.html">PROJECTS</a>
+
+</h1>
+
+
+<br><br><br><div class="a">
+<form>
+  <h3>Pierwsza data<br>
+  <input type="date" name="1" id="1">
+  <br>
+  Druga data <br>
+  <input type="date" name="2" id="2"></h3>
+</form>
+
+<button onclick="myFunction()">Oblicz<br>ile upłynie dni</button>
+
+<script>
+function myFunction() {
+var a = new Date(document.getElementById("1").value);
+var b = new Date(document.getElementById("2").value);
+var c = a.getTime();
+var d = b.getTime();
+var e = (c-d);
+var f = e/86400000;
+alert(f);
+}
+</script>
+
+</div>
+
+</body>
+</html>
