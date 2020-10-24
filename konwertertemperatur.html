@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="utf-8">
+  <link rel="icon" href="https://pablos.tk/Plogo.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pablos.tk
+</title>
+
+<style>
+
+body {
+  color: white;
+}
+
+div.a {
+  text-align: center;
+}
+
+
+
+a:link, a:visited {
+  background-color: blue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: SlateBlue;
+}
+
+
+
+
+body {
+  background-color: lightblue;
+}
+
+body {
+  color: white;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<h1 style="background-color:blue;">
+
+<a href="projects.html">PROJECTS</a>
+
+</h1>
+
+
+<br><br><br><div class="a">
+<h1>Konwerter temperatur</h1><br>
+<h3>1. Zmiana temperatury z fahrenheita na celsjusza</h3>
+<form>
+Podaj temperaturę w stopniach Fahrenheita(°F)<br><br>
+<input type="number" id="takk"><br><br>
+</form>
+<button onclick="zamiana()">zamiana</button>
+<p id="tak"></p><br>
+
+<h3>2. Zmiana temperatury z celsjusza na fahrenheita</h3>
+<form>
+Podaj temperaturę w stopniach Celsjusza(°C)<br><br>
+<input type="number" id="takk1"><br><br>
+</form>
+<button onclick="zamianaa()">zamiana</button>
+<p id="tak1"></p><br>
+
+<script>
+function zamiana() //z Fahrenheita na Celsjusza
+{
+var f = document.getElementById("takk").value;
+//alert((5/9)*(f-32));
+document.getElementById('tak').innerHTML="Podana przez Ciebie wartość, zamienia na stopnie Celsjusza(°C) wynosi " + "<b>" + (5/9)*(f-32) + "</b>";
+}
+
+function zamianaa() //z Celsjusza na Fahrenheita
+{
+  //alert((c * (9/5) + 32));
+var c = document.getElementById("takk1").value;
+document.getElementById('tak1').innerHTML="Podana przez Ciebie wartość, zamienia na stopnie Fahrenheita(°F) wynosi " + "<b>" + (c * (9/5) + 32) + "</b>";
+}
+</script>
+</div>
+
+</body>
+</html>
