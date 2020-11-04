@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+  <meta name="keywords" content="Godzina, zegar" />
    <meta charset="utf-8">
   <link rel="icon" href="https://pablos.tk/Plogo.jpg">
 <title>pablos.tk
@@ -15,7 +16,13 @@ div.a {
   text-align: center;
 }
 
+div.b {
+  margin-left: 1350px;;
+}
 
+div.c {
+  margin-left: 1380px;;
+}
 
 a:link, a:visited {
   background-color: blue;
@@ -30,32 +37,14 @@ a:hover, a:active {
   background-color: SlateBlue;
 }
 
-
-
-
 body {
   background-color: lightblue;
 }
 
-
-
-
-
-
-}
-
-body {
-  color: white;
-}
-
-
 </style>
-
+<body onload="startTime()">
 </head>
-
 <body>
-
-
 
 <h1 style="background-color:blue;">
 
@@ -69,7 +58,42 @@ body {
 
 <a href="about me.html">ABOUT ME</a>
 </h1>
-
+<br><br>
+<div class = "b">
+    <h2><p id="demo"></p></h2>
+</div>
+<div class = "c">
+    <h3><p id="zegar"></p></h3>
+</div>
+<script>
+{
+  var hour = new Date().getHours(); 
+  var greeting;
+  if (hour < 18) {
+    greeting = "Dzień dobry!";
+  } else {
+    greeting = "Dobry wieczór!";
+  }
+  document.getElementById("demo").innerHTML = greeting;
+}
+</script>
+<script>
+  function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('zegar').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 25);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};
+  return i;
+}
+</script>
 
 <br><br><br><div class="a">
 <h1>Witaj na stronie pablos.tk!!!</h1>
